@@ -1,4 +1,3 @@
-const random = require('./random')
+const read = require('./read.js')
 
-const max = Number(process.argv[2])
-console.log(random(max))
+read('.prettierrc')
