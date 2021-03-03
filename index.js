@@ -1,3 +1,3 @@
-const read = require('./read.js')
-
-read('.prettierrc')
+const addStudent = require('./addStudent.js')
+const read = require('./addStudent.js')
+addStudent()
