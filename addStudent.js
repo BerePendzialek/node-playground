@@ -10,5 +10,8 @@ module.exports = function addStudent(student) {
     .then(() => console.log('db connected'))
     .catch(error => console.error(error))
 
-  User.find().then(users => console.log(users))
+  User.create(student).then(result => {
+    console.log(result)
+    mongoose.connection.close()
+  })
 }

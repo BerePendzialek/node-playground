@@ -1,3 +1,4 @@
 const addStudent = require('./addStudent.js')
-const read = require('./addStudent.js')
-addStudent()
+const [, , name, role] = process.argv
+
+addStudent({ name, role, php: false })
